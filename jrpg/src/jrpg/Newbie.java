@@ -2,11 +2,12 @@ package jrpg;
 
 public class Newbie {
 	private String nama;
-   	private String job;
+   	private String job; 
 
-	public Newbie(String nama, String job){
+
+	public Newbie(String nama){
 		this.nama = nama;
-		this.job = job;
+		this.job = "Newbie";
 	}
 
 	public String getNama() {
@@ -15,7 +16,7 @@ public class Newbie {
 	public void setNama(String nama) {
 		this.nama = nama;
 	}
-
+	
 	public String getJob () {
 		return job;
 	}
@@ -24,11 +25,11 @@ public class Newbie {
 	}
 
 	void display(){
-		System.out.println("\nName \t\t: " + this.nama);
+		System.out.println("\nNama \t\t: " + this.nama);
 		System.out.println("Job \t\t: " + this.job);
 	}
     void useskill(){
-        System.out.println("Using Skill \t: No Skills");
+		System.out.println(" Tidak punya Skill ");
     }
 
 }
